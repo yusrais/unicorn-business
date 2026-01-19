@@ -1,1 +1,392 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة - يونيكورن بزنس</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- شريط المعلومات العلوي -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+971 50 336 3069</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+971 54 252 6453</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@unicornbusiness.com</span>
+                    </div>
+                </div>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="switchLanguage('ar')">عربي</button>
+                    <button class="lang-btn" onclick="switchLanguage('en')">English</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-img">
+                        <div class="logo-text">
+                            <div class="logo-line1">Unicorn Business</div>
+                            <div class="logo-line2">For Trade & Investment FZE</div>
+                            <div class="logo-line3">License No. 4413345.01</div>
+                        </div>
+                    </div>
+                </a>
+                
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="index.html#about"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                    <li><a href="index.html#products"><i class="fas fa-boxes"></i> منتجاتنا</a></li>
+                    <li><a href="index.html#services"><i class="fas fa-handshake"></i> خدماتنا</a></li>
+                    <li><a href="index.html#contact"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                    <li><a href="blog.html" class="active"><i class="fas fa-blog"></i> المدونة</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- رأس الصفحة -->
+    <section class="page-header">
+        <div class="container">
+            <h1>المدونة</h1>
+            <p>أحدث المقالات والأخبار حول التجارة العالمية والاستثمار</p>
+        </div>
+    </section>
+
+    <!-- محتوى المدونة -->
+    <section class="section">
+        <div class="container">
+            <div class="blog-content">
+                <!-- مقالات مميزة -->
+                <div class="featured-posts">
+                    <h2 class="blog-section-title">مقالات مميزة</h2>
+                    <div class="featured-grid">
+                        <div class="featured-post">
+                            <div class="post-image">
+                                <div class="image-placeholder">
+                                    <i class="fas fa-globe-americas"></i>
+                                    <span>التجارة العالمية</span>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">تجارة دولية</span>
+                                <h3 class="post-title">الاتجاهات العالمية في تجارة المواد الغذائية 2024</h3>
+                                <p class="post-excerpt">استكشف أحدث الاتجاهات في سوق المواد الغذائية العالمية والتغيرات التي تؤثر على سلاسل التوريد والاستيراد والتصدير.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> 15 يناير 2024</span>
+                                    <span class="post-read-time"><i class="far fa-clock"></i> 5 دقائق قراءة</span>
+                                </div>
+                                <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-chevron-left"></i></a>
+                            </div>
+                        </div>
+                        
+                        <div class="featured-post">
+                            <div class="post-image">
+                                <div class="image-placeholder">
+                                    <i class="fas fa-oil-can"></i>
+                                    <span>الزيوت النباتية</span>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">منتجات أساسية</span>
+                                <h3 class="post-title">دليل شامل لاختيار زيوت الطهي المناسبة للأغراض التجارية</h3>
+                                <p class="post-excerpt">تعرف على أنواع الزيوت النباتية المختلفة وخصائصها وكيفية اختيار النوع المناسب لمشروعك التجاري أو مصنعك.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> 10 يناير 2024</span>
+                                    <span class="post-read-time"><i class="far fa-clock"></i> 4 دقائق قراءة</span>
+                                </div>
+                                <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-chevron-left"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- جميع المقالات -->
+                <div class="all-posts">
+                    <h2 class="blog-section-title">جميع المقالات</h2>
+                    
+                    <div class="posts-grid">
+                        <div class="blog-post">
+                            <div class="post-image">
+                                <div class="image-placeholder small">
+                                    <i class="fas fa-file-import"></i>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">استيراد وتصدير</span>
+                                <h3 class="post-title">دليل المبتدئين للاستيراد من الإمارات العربية المتحدة</h3>
+                                <p class="post-excerpt">خطوات عملية ونصائح همة للبدء في عمليات الاستيراد من الإمارات العربية المتحدة، البوابة التجارية للشرق الأوسط.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> 5 يناير 2024</span>
+                                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-chevron-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-post">
+                            <div class="post-image">
+                                <div class="image-placeholder small">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">شراكات تجارية</span>
+                                <h3 class="post-title">فوائد العمل مع مورد عالمي متكامل الخدمات</h3>
+                                <p class="post-excerpt">كيف يمكن لشريك تجاري موثوق أن يبسط عملياتك ويوفر لك الوقت والجهد والمال في عمليات الاستيراد والتصدير.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> 28 ديسمبر 2023</span>
+                                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-chevron-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-post">
+                            <div class="post-image">
+                                <div class="image-placeholder small">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">جودة ومعايير</span>
+                                <h3 class="post-title">معايير الجودة الدولية في المنتجات الغذائية: ما تحتاج إلى معرفته</h3>
+                                <p class="post-excerpt">دليل شامل لأهم شهادات الجودة الدولية للمواد الغذائية وكيفية التأكد من مطابقة المنتجات للمعايير العالمية.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> 20 ديسمبر 2023</span>
+                                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-chevron-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-post">
+                            <div class="post-image">
+                                <div class="image-placeholder small">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">تحليلات السوق</span>
+                                <h3 class="post-title">تأثير الاتفاقيات التجارية الدولية على عمليات التصدير</h3>
+                                <p class="post-excerpt">كيف تؤثر الاتفاقيات التجارية بين الدول على تكاليف التصدير والجمارك والوصول إلى الأسواق الجديدة.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> 15 ديسمبر 2023</span>
+                                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-chevron-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-post">
+                            <div class="post-image">
+                                <div class="image-placeholder small">
+                                    <i class="fas fa-industry"></i>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">مواد صناعية</span>
+                                <h3 class="post-title">سوق الحديد والصلب في 2024: التوقعات والفرص</h3>
+                                <p class="post-excerpt">تحليل لسوق الحديد والصلب العالمي وأهم العوامل المؤثرة على الأسعار والطلب في العام المقبل.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="fas fa-calendar-alt"></i> 10 ديسمبر 2023</span>
+                                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-chevron-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="blog-post">
+                            <div class="post-image">
+                                <div class="image-placeholder small">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                            </div>
+                            <div class="post-content">
+                                <span class="post-category">استدامة</span>
+                                <h3 class="post-title">التجارة المستدامة: اتجاه عالمي يغير قواعد اللعبة</h3>
+                                <p class="post-excerpt">كيف تؤثر متطلبات الاستدامة على سلاسل التوريد العالمية وما يمكن للشركات القيام به للتكيف مع هذا الاتجاه.</p>
+                                <div class="post-meta">
+                                    <span class="post-date"><i class="far fa-calendar"></i> 5 ديسمبر 2023</span>
+                                    <a href="#" class="read-more">اقرأ المزيد <i class="fas fa-chevron-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الأرشيف -->
+                <div class="blog-archive">
+                    <h2 class="blog-section-title">الأرشيف</h2>
+                    <div class="archive-list">
+                        <div class="archive-year">
+                            <h3>2024</h3>
+                            <ul>
+                                <li><a href="#">يناير (2 مقالة)</a></li>
+                            </ul>
+                        </div>
+                        <div class="archive-year">
+                            <h3>2023</h3>
+                            <ul>
+                                <li><a href="#">ديسمبر (6 مقالة)</a></li>
+                                <li><a href="#">نوفمبر (4 مقالات)</a></li>
+                                <li><a href="#">أكتوبر (3 مقالات)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- الاشتراك في النشرة -->
+                <div class="newsletter-section">
+                    <div class="newsletter-box">
+                        <h3>اشترك في نشرتنا البريدية</h3>
+                        <p>احصل على أحدث المقالات والأخبار حول التجارة العالمية مباشرة في بريدك الإلكتروني.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="بريدك الإلكتروني" required>
+                            <button type="submit" class="btn btn-primary">اشتراك</button>
+                        </form>
+                        <p class="newsletter-note">نعد بعدم مشاركة بريدك الإلكتروني مع أي طرف ثالث.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-img">
+                            <div class="logo-text">
+                                <div class="logo-line1">Unicorn Business</div>
+                                <div class="logo-line2">For Trade & Investment FZE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        شركاء عالميون في التجارة والاستثمار منذ 2006.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/971542526453" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-left"></i> الرئيسية</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-left"></i> من نحن</a></li>
+                        <li><a href="index.html#products"><i class="fas fa-chevron-left"></i> منتجاتنا</a></li>
+                        <li><a href="blog.html" class="active"><i class="fas fa-chevron-left"></i> المدونة</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">أحدث المقالات</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> اتجاهات تجارة الغذاء 2024</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> دليل زيوت الطهي التجارية</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> الاستيراد من الإمارات</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-left"></i> فوائد المورد المتكامل</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">معلومات الاتصال</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>مدينة الشارقة للنشر - المنطقة الحرة - مركز الأعمال، الشارقة، الإمارات</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+971 50 336 3069</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+971 54 252 6453</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        &copy; 2024 يونيكورن بزنس للتجارة والاستثمار. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <style>
+        .page-header {
+            background: linear-gradient(to right, var(--primary-black), #333);
+            color: var(--white);
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .blog-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .blog-section-title {
+            font-size: 1.8rem;
+            color: var(--primary-black);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-gold);
+        }
+        
+        /* المقالات المميزة */
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .featured-post {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            display: flex;
+            transition: var(--transition);
+        }
+        
+        .fe
