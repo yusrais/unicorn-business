@@ -1,1 +1,470 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شروط الشحن والتسليم - يونيكورن بزنس</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- شريط المعلومات العلوي -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+971 50 336 3069</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+971 54 252 6453</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@unicornbusiness.com</span>
+                    </div>
+                </div>
+                <div class="language-switcher">
+                    <button class="lang-btn active" onclick="switchLanguage('ar')">عربي</button>
+                    <button class="lang-btn" onclick="switchLanguage('en')">English</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <div class="logo-img">
+                        <div class="logo-text">
+                            <div class="logo-line1">Unicorn Business</div>
+                            <div class="logo-line2">For Trade & Investment FZE</div>
+                            <div class="logo-line3">License No. 4413345.01</div>
+                        </div>
+                    </div>
+                </a>
+                
+                <button class="mobile-menu-btn" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="index.html#about"><i class="fas fa-info-circle"></i> من نحن</a></li>
+                    <li><a href="index.html#products"><i class="fas fa-boxes"></i> منتجاتنا</a></li>
+                    <li><a href="index.html#services"><i class="fas fa-handshake"></i> خدماتنا</a></li>
+                    <li><a href="index.html#contact"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+                    <li><a href="blog.html"><i class="fas fa-blog"></i> المدونة</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- رأس الصفحة -->
+    <section class="page-header">
+        <div class="container">
+            <h1>شروط الشحن والتسليم</h1>
+            <p>آخر تحديث: 1 يناير 2024</p>
+        </div>
+    </section>
+
+    <!-- محتوى الصفحة -->
+    <section class="section">
+        <div class="container">
+            <div class="page-content">
+                <div class="shipping-section">
+                    <h2>مقدمة</h2>
+                    <p>تحدد شروط الشحن والتسليم هذه ("الشروط") السياسات والإجراءات المتعلقة بشحن وتسليم المنتجات والسلع المقدمة من قبل يونيكورن بزنس ("نحن"، "خاصتنا"، أو "الشركة"). تنطبق هذه الشروط على جميع الطلبات والمشتريات ما لم يتم الاتفاق على شروط أخرى كتابةً.</p>
+                </div>
+
+                <div class="shipping-section">
+                    <h2>1. طرق الشحن</h2>
+                    <p>نحن نقدم خدمات الشحن عبر الطرق التالية:</p>
+                    
+                    <div class="shipping-methods">
+                        <div class="shipping-method">
+                            <div class="method-icon">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                            <h3>الشحن البحري</h3>
+                            <p>مناسب للشحنات الكبيرة والحاوية الكاملة (FCL) أو أقل من حاوية (LCL).</p>
+                            <div class="method-details">
+                                <p><strong>الوقت التقريبي:</strong> 15-45 يوم عمل حسب الوجهة</p>
+                                <p><strong>مناسب ل:</strong> المواد الغذائية السائبة، الحديد، المعادن، المنتجات الصناعية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="shipping-method">
+                            <div class="method-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <h3>الشحن الجوي</h3>
+                            <p>مناسب للشحنات السريعة والمنتجات ذات القيمة العالية أو القابلة للتلف.</p>
+                            <div class="method-details">
+                                <p><strong>الوقت التقريبي:</strong> 3-10 أيام عمل حسب الوجهة</p>
+                                <p><strong>مناسب ل:</strong> العينات، المنتجات سريعة التلف، الطلبات العاجلة</p>
+                            </div>
+                        </div>
+                        
+                        <div class="shipping-method">
+                            <div class="method-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3>الشحن البري</h3>
+                            <p>مناسب للدول المجاورة والمنطقة الجغرافية القريبة.</p>
+                            <div class="method-details">
+                                <p><strong>الوقت التقريبي:</strong> 7-20 يوم عمل حسب الوجهة</p>
+                                <p><strong>مناسب ل:</strong> دول الخليج العربي، الدول المجاورة</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shipping-section">
+                    <h2>2. أوقات التسليم</h2>
+                    <p>أوقات التسليم المذكورة هي تقديرات وتعتمد على العوامل التالية:</p>
+                    <ul>
+                        <li>طريقة الشحن المختارة</li>
+                        <li>البلد والوجهة النهائية</li>
+                        <li>الإجراءات الجمركية في بلد الوصول</li>
+                        <li>الظروف الجوية وأحداث القوة القاهرة</li>
+                        <li>التوافر الفعلي للبضاعة</li>
+                    </ul>
+                    <p>نحن نبذل قصارى جهدنا لتسليم البضائع في أقرب وقت ممكن، ولكن لا نضمن أوقات التسليم المحددة بسبب العوامل الخارجة عن سيطرتنا.</p>
+                </div>
+
+                <div class="shipping-section">
+                    <h2>3. التكاليف والرسوم</h2>
+                    <p>تشمل تكاليف الشحن ما يلي:</p>
+                    <ul>
+                        <li><strong>رسوم النقل:</strong> من الميناء/المطار المصدر إلى الميناء/المطار المستورد</li>
+                        <li><strong>رسوم التأمين:</strong> تأمين على البضاعة أثناء النقل (اختياري ولكن موصى به)</li>
+                        <li><strong>رسوم التخليص الجمركي:</strong> في بلد الوصول (عادةً ما تكون على عاتق المستورد)</li>
+                        <li><strong>رسوم أخرى:</strong> قد تشمل رسوم المناولة، التخزين، والوثائق</li>
+                    </ul>
+                    <p>يتم تقديم عرض سعر مفصل يتضمن جميع التكاليف قبل تأكيد الطلب.</p>
+                </div>
+
+                <div class="shipping-section">
+                    <h2>4. مسؤولية الشحن</h2>
+                    <p>تنتقل مخاطر فقدان أو تلف البضاعة كما يلي:</p>
+                    <ul>
+                        <li><strong>نقطة التسليم (EXW):</strong> تنتقل المخاطر عند تسليم البضاعة للمشتري في منشأتنا</li>
+                        <li><strong>التسليم على ظهر السفينة (FOB):</strong> تنتقل المخاطر عند عبور البضاعة لحاجز السفينة في ميناء التحميل</li>
+                        <li><strong>التكلفة والتأمين وأجرة الشحن (CIF):</strong> نغطي التكاليف والتأمين حتى ميناء الوصول</li>
+                        <li><strong>تسليم البضاعة جمركية مدفوعة (DDP):</strong> نغطي جميع التكاليف حتى عنوان المستورد</li>
+                    </ul>
+                    <p>يتم تحديد شروط التسليم (Incoterms) لكل طلب ويتم الاتفاق عليها كتابةً قبل الشحن.</p>
+                </div>
+
+                <div class="shipping-section">
+                    <h2>5. الوثائق المطلوبة</h2>
+                    <p>نوفر جميع الوثائق اللازمة للشحن، بما في ذلك:</p>
+                    <ul>
+                        <li>فاتورة تجارية (Commercial Invoice)</li>
+                        <li>قائمة التعبئة (Packing List)</li>
+                        <li>شهادة المنشأ (Certificate of Origin)</li>
+                        <li>وثيقة الشحن (Bill of Lading / Air Waybill)</li>
+                        <li>شهادات الصحة والجودة (حسب نوع المنتج)</li>
+                        <li>شهادات الحلال (للمنتجات الغذائية الحلال)</li>
+                    </ul>
+                </div>
+
+                <div class="shipping-section">
+                    <h2>6. تتبع الشحنات</h2>
+                    <p>نوفر أرقام تتبع لجميع الشحنات لتمكينكم من:</p>
+                    <ul>
+                        <li>تتبع موقع الشحنة في الوقت الفعلي</li>
+                        <li>معرفة حالة الشحنة وتقديرات وقت الوصول</li>
+                        <li>الاستعداد لاستلام البضاعة عند الوصول</li>
+                    </ul>
+                    <p>يتم إرسال معلومات التتبع عبر البريد الإلكتروني بمجرد شحن البضاعة.</p>
+                </div>
+
+                <div class="shipping-section">
+                    <h2>7. التأخيرات والإلغاء</h2>
+                    <p>في حال حدوث تأخير غير متوقع:</p>
+                    <ul>
+                        <li>نقوم بإعلامكم فوراً بأي تأخيرات معروفة</li>
+                        <li>نعمل على حل أي مشاكل تحدث أثناء النقل</li>
+                        <li>نقدم تحديثات منتظمة عن حالة الشحنة</li>
+                    </ul>
+                    <p>بخصوص الإلغاء:</p>
+                    <ul>
+                        <li>يمكن إلغاء الطلبات قبل الشحن مع احتمالية تطبيق رسوم إلغاء</li>
+                        <li>لا يمكن إلغاء الطلبات بعد الشحن إلا بموافقة الطرفين</li>
+                        <li>تخضع المنتجات المصنعة حسب الطلب لسياسات إلغاء محددة</li>
+                    </ul>
+                </div>
+
+                <div class="shipping-section">
+                    <h2>8. المطالبات والتعويضات</h2>
+                    <p>في حالة تلف أو فقدان البضاعة:</p>
+                    <ul>
+                        <li>يجب إبلاغنا كتابةً خلال 3 أيام عمل من استلام البضاعة</li>
+                        <li>يجب تقديم صور واضحة للبضاعة التالفة</li>
+                        <li>يجب الاحتفاظ بالبضاعة التالفة والتغليف الأصلي للفحص</li>
+                        <li>تتم معالجة المطالبات خلال 10-15 يوم عمل من استلام جميع الوثائق</li>
+                    </ul>
+                </div>
+
+                <div class="shipping-section">
+                    <h2>9. الأسئلة الشائعة</h2>
+                    
+                    <div class="faq-item">
+                        <h3>كم من الوقت يستغرق استلام طلبي؟</h3>
+                        <p>يتراوح وقت التسليم بين 15-45 يوم عمل للشحن البحري، 3-10 أيام عمل للشحن الجوي، و7-20 يوم عمل للشحن البري، حسب الوجهة ونوع المنتج.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>من يتحمل رسوم الجمارك؟</h3>
+                        <p>عادةً ما يتحمل المستورد رسوم الجمارك والضرائب في بلده، إلا إذا تم الاتفاق على شروط DDP (تسليم البضاعة جمركية مدفوعة).</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>هل تتوفر خدمة التتبع؟</h3>
+                        <p>نعم، نوفر أرقام تتبع لجميع الشحنات ويمكنكم متابعة شحنتكم عبر الإنترنت.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>ماذا لو كانت البضاعة تالفة عند الوصول؟</h3>
+                        <p>يجب إبلاغنا خلال 3 أيام عمل مع تقديم صور واضحة. سنقوم بمعالجة المطالبة وفقاً لشروط التأمين والسياسات المتفق عليها.</p>
+                    </div>
+                </div>
+
+                <div class="shipping-section">
+                    <h2>10. الاتصال بنا</h2>
+                    <p>للاستفسارات المتعلقة بالشحن والتسليم، يرجى الاتصال بقسم الخدمات اللوجستية:</p>
+                    <div class="contact-details-box">
+                        <p><strong>قسم الخدمات اللوجستية:</strong> يونيكورن بزنس للتجارة والاستثمار</p>
+                        <p><strong>الهاتف:</strong> +971 50 336 3069</p>
+                        <p><strong>الواتساب:</strong> +971 54 252 6453</p>
+                        <p><strong>البريد الإلكتروني:</strong> logistics@unicornbusiness.com</p>
+                        <p><strong>ساعات العمل:</strong> الأحد - الخميس، 8:00 ص - 5:00 م (توقيت الإمارات)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-img">
+                            <div class="logo-text">
+                                <div class="logo-line1">Unicorn Business</div>
+                                <div class="logo-line2">For Trade & Investment FZE</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        شركاء عالميون في التجارة والاستثمار منذ 2006.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/971542526453" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">الصفحات القانونية</h3>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html"><i class="fas fa-chevron-left"></i> سياسة الخصوصية</a></li>
+                        <li><a href="terms.html"><i class="fas fa-chevron-left"></i> شروط الاستخدام</a></li>
+                        <li><a href="shipping.html" class="active"><i class="fas fa-chevron-left"></i> شروط الشحن</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">معلومات الاتصال</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>مدينة الشارقة للنشر - المنطقة الحرة - مركز الأعمال، الشارقة، الإمارات</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+971 50 336 3069</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+971 54 252 6453</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="copyright">
+                        &copy; 2024 يونيكورن بزنس للتجارة والاستثمار. جميع الحقوق محفوظة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <style>
+        .page-header {
+            background: linear-gradient(to right, var(--primary-black), #333);
+            color: var(--white);
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .page-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .shipping-section {
+            margin-bottom: 50px;
+        }
+        
+        .shipping-section h2 {
+            font-size: 1.8rem;
+            color: var(--primary-black);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-gold);
+        }
+        
+        .shipping-section h3 {
+            font-size: 1.3rem;
+            color: var(--dark-gray);
+            margin: 25px 0 15px;
+        }
+        
+        .shipping-section p, .shipping-section li {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+        
+        .shipping-section ul {
+            padding-right: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .shipping-section li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-right: 15px;
+        }
+        
+        .shipping-section li::before {
+            content: "•";
+            color: var(--primary-gold);
+            position: absolute;
+            right: 0;
+            font-size: 1.2rem;
+        }
+        
+        .shipping-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .shipping-method {
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+        
+        .shipping-method:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-gold);
+            box-shadow: 0 8px 20px rgba(212, 175, 55, 0.15);
+        }
+        
+        .method-icon {
+            font-size: 2.5rem;
+            color: var(--primary-gold);
+            margin-bottom: 15px;
+        }
+        
+        .shipping-method h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--primary-black);
+        }
+        
+        .method-details {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed var(--border-color);
+        }
+        
+        .method-details p {
+            font-size: 0.95rem;
+            margin-bottom: 8px;
+        }
+        
+        .faq-item {
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-right: 4px solid var(--primary-gold);
+        }
+        
+        .faq-item h3 {
+            color: var(--primary-black);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .contact-details-box {
+            background-color: var(--light-gray);
+            padding: 20px;
+            border-radius: 8px;
+            border-right: 4px solid var(--primary-gold);
+            margin-top: 15px;
+        }
+        
+        .contact-details-box p {
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .shipping-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .shipping-methods {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+              </html>
